@@ -1,6 +1,6 @@
 ﻿/* Paleta de colores ampliada y vibrante */
 :root {
-    --primary-color: #3498DB; /* Azul celeste */
+    --primary-color: #363534; /* Azul celeste */
     --secondary-color: #1ABC9C; /* Verde turquesa */
     --danger-color: #8E44AD; /* Violeta */
     --warning-color: #16A085; /* Verde azulado */
@@ -71,11 +71,11 @@ tbody tr:hover {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #94f2a5; 
+    background-color: #bab7b6;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #e1f294; 
+    background-color: #f7f3f2;
 }
 
 /* Botones */
