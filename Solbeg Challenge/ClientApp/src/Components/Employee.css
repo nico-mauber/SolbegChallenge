@@ -1,0 +1,187 @@
+﻿/* Paleta de colores ampliada y vibrante */
+:root {
+    --primary-color: #3498DB; /* Azul celeste */
+    --secondary-color: #1ABC9C; /* Verde turquesa */
+    --danger-color: #8E44AD; /* Violeta */
+    --warning-color: #16A085; /* Verde azulado */
+    --info-color: #5DADE2; /* Azul cielo */
+    --success-color: #2ECC71; /* Verde */
+    --background-color: #EAF2F8; /* Azul muy claro */
+    --modal-background-color: #FFFFFF; /* Blanco */
+    --modal-overlay-color: rgba(0, 0, 0, 0.7);
+    --table-border-color: #D4E6F1; /* Azul pastel claro */
+    --hover-color: #EBF5FB; /* Azul muy suave */
+    --header-background-color: #2980B9; /* Azul acero */
+    --header-text-color: #FFFFFF; /* Blanco */
+    --button-text-color: #FFFFFF; /* Blanco */
+    --button-border-color: #A9CCE3; /* Azul grisáceo */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Contenedor para la tabla con desplazamiento */
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--table-border-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #94f2a5; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e1f294; 
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: var(--button-text-color);
+    font-weight: 600;
+}
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+.btn-primary {
+    background-color: var(--info-color);
+}
+
+    .btn-primary:hover {
+        background-color: #1E90FF; /* Azul Dodger */
+    }
+
+.btn-success {
+    background-color: var(--success-color);
+}
+
+    .btn-success:hover {
+        background-color: #32CD32; /* Verde Lima */
+    }
+
+.btn-danger {
+    background-color: var(--danger-color);
+}
+
+    .btn-danger:hover {
+        background-color: #FF1493; /* Rosa fuerte */
+    }
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: black;
+}
+
+    .btn-warning:hover {
+        background-color: #FF8C00; /* Naranja oscuro */
+    }
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-overlay-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--modal-background-color);
+    padding: 30px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+    .modal-actions button {
+        margin-left: 10px;
+    }
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--danger-color);
+    transition: color 0.2s ease;
+}
+
+    .close-button:hover {
+        color: #FF4500; /* Naranja rojizo */
+    }
+
+/* Accesibilidad */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
