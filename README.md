@@ -4,6 +4,8 @@
 PREVIEW
 ![image](https://github.com/user-attachments/assets/c91abe7e-1613-4b23-b1e2-97b56d599a14)
 
+THERE IS A .BACPAC WITH EMPLOYEE TABLE AND SOME EMPLOYEES INSIDE.
+
 The project is a SPA with react and .NET. This interacts with a DBMS that provides data.
 
 The application can add, delete, and modify data from the employee table.
